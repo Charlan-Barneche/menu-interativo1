@@ -9,15 +9,15 @@ body{
     display: grid;
     min-height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 10% 70% 10%;
     box-sizing: border-box;
-    background-color: #c6d1a6
+    background-color: #6B736A;
 }
 
 header{
     grid-column: 1;
     grid-row: 1;
-    background-color: #ede89d;
+    background-color: #A7B3A4;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -29,7 +29,7 @@ header{
     margin-right: 10px;
     width: 70px;
     height: 90px;
-    background-color: #19b5a5;
+    background-color: #f71c5a;
     cursor: pointer;
     border-radius: 0px 0px 10px 10px;
     transition: 0.3s;
@@ -46,7 +46,7 @@ header{
     width: 200px;
     height: 480px;
     border-radius: 30px;
-    background-color: #19b5a5;
+    background-color: #CBD9C7;
 }
 
 .menu span{
@@ -55,7 +55,7 @@ header{
     width: 20px;
     height: 10px;
     border-radius: 25%;
-    background-color: #ede89d;
+    background-color: #EFFFEB;
     transform: translate(calc(17.5px * var(--x)),calc(12px * var(--y)));
     transition: transform 0.5s, width 0s, height 0s, background-color 1.0s;
     transition-delay: 0s;
@@ -75,7 +75,7 @@ header{
     transition-delay: 0s;
     transition: transform 0.5s, width 0.5s, height 0.5s, background-color 1.0s, box-shadow 0.3s;
     border-radius: 25px;
-    background-color:  #ede89d;
+    background-color:  #fff;
     transform: translate(calc(155px * var(--x)),calc(60px * var(--y)));
     display: flex;
     align-items: center;
@@ -128,21 +128,14 @@ header{
 
 main{
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 main .title{
-    font-size: 40px;
-    color:#ff0048;
+    font-size: 30px;
+    color:#fff;
     font-family: 'Caveat', cursive;
-    cursor: pointer;
-    transition: 1s;
-}
-
-main .title.active{
-    color: #ff0048;
-    filter: drop-shadow(0 0 2px #ff4f81) drop-shadow(0 0 5px #ff4f81) drop-shadow(0 0 15px #ff4f81);
 }
